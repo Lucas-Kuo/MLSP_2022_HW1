@@ -1,4 +1,3 @@
-from tkinter import image_types
 import image
 import cv2
 import utils
@@ -10,9 +9,9 @@ image_path = "ex_128.png"
 
 img = image.load_image(image_path)
 
-cv2.imshow("img", img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# cv2.imshow("img", img)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
 
 dft_result = utils.DFT(img)
 dft_magnitude = utils.to_magnitude(dft_result)
@@ -29,18 +28,18 @@ plt.show()
 
 img2 = image.enlarge_image_upper_left(img)
 
-cv2.imshow("img", img2)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# cv2.imshow("img", img2)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
 
 img3 = image.enlarge_image_interpolation(img)
 
-cv2.imshow("img", img3)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# cv2.imshow("img", img3)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
 
 img4 = image.enlarge_image_fill_void(img)
 
-cv2.imshow("img", img4)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# cv2.imshow("img", img4)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
